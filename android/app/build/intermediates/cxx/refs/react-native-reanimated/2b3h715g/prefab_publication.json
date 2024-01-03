@@ -1,0 +1,26 @@
+{
+  "installationFolder": "/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-reanimated/android/build/intermediates/prefab_package/debug/prefab",
+  "gradlePath": ":react-native-reanimated",
+  "packageInfo": {
+    "packageName": "react-native-reanimated",
+    "packageSchemaVersion": 2,
+    "packageDependencies": [],
+    "modules": [
+      {
+        "moduleName": "reanimated",
+        "moduleHeaders": "/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-reanimated/android/build/prefab-headers/reanimated",
+        "moduleExportLibraries": [],
+        "abis": [
+          {
+            "abiName": "x86_64",
+            "abiApi": 21,
+            "abiNdkMajor": 23,
+            "abiStl": "c++_shared",
+            "abiLibrary": "/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-reanimated/android/build/intermediates/cxx/Debug/2n4yc5k4/obj/x86_64/libreanimated.so",
+            "abiAndroidGradleBuildJsonFile": "/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-reanimated/android/.cxx/Debug/2n4yc5k4/x86_64/android_gradle_build.json"
+          }
+        ]
+      }
+    ]
+  }
+}

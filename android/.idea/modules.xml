@@ -6,6 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1352491678/Jewele_Zone.react-native-gesture-handler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1352491678/Jewele_Zone.react-native-gesture-handler.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-897005649/Jewele_Zone.react-native-mmkv.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-897005649/Jewele_Zone.react-native-mmkv.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1331057798/Jewele_Zone.react-native-reanimated.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1331057798/Jewele_Zone.react-native-reanimated.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MyApp.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MyApp.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1423759480/MyApp.react-native-gesture-handler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1423759480/MyApp.react-native-gesture-handler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/2130254153/MyApp.react-native-mmkv.main.iml" filepath="$PROJECT_DIR$/.idea/modules/2130254153/MyApp.react-native-mmkv.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-61283948/MyApp.react-native-reanimated.main.iml" filepath="$PROJECT_DIR$/.idea/modules/-61283948/MyApp.react-native-reanimated.main.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,0 @@
-com.jewelezone.test.app-androidTest-0 /Users/supan/Desktop/Supan/React_Native/MyApp/android/app/build/generated/res/resValues/androidTest/debug
-com.jewelezone.test.app-androidTest-1 /Users/supan/Desktop/Supan/React_Native/MyApp/android/app/build/generated/res/rs/androidTest/debug
-com.jewelezone.test.app-mergeDebugAndroidTestResources-2 /Users/supan/Desktop/Supan/React_Native/MyApp/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.jewelezone.test.app-mergeDebugAndroidTestResources-3 /Users/supan/Desktop/Supan/React_Native/MyApp/android/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.jewelezone.test.app-merged_res-4 /Users/supan/Desktop/Supan/React_Native/MyApp/android/app/build/intermediates/merged_res/debugAndroidTest

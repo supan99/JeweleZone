@@ -42,6 +42,7 @@ std::shared_ptr<TurboModule> rncli_ModuleProvider(const std::string moduleName, 
 
 void rncli_registerProviders(std::shared_ptr<ComponentDescriptorProviderRegistry const> providerRegistry) {
 
+
   providerRegistry->add(concreteComponentDescriptorProvider<RNGestureHandlerButtonComponentDescriptor>());
   providerRegistry->add(concreteComponentDescriptorProvider<RNGestureHandlerRootViewComponentDescriptor>());
 

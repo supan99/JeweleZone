@@ -4,6 +4,9 @@ import type { ThemeConfiguration } from '@/types/theme/config';
 
 const colorsLight = {
 	white: "#FFFFFF",
+	titleColor: "#050506",
+	secondaryColor: "#28292F",
+	borderLineColor: "#ECEDEE",
 	red500: '#C13333',
 	gray800: '#303030',
 	gray400: '#4D4D4D',
@@ -17,6 +20,9 @@ const colorsLight = {
 
 const colorsDark = {
 	white: "#FFFFFF",
+	titleColor: "#050506",
+	secondaryColor: "#28292F",
+	borderLineColor: "#ECEDEE",
 	gray800: '#E0E0E0',
 	gray400: '#969696',
 	gray200: '#BABABA',
@@ -27,7 +33,7 @@ const colorsDark = {
 	brown100: "#764800",
 } as const;
 
-const sizes = [12, 16, 24, 32, 40, 80] as const;
+const sizes = [10, 12, 14, 16, 18, 20, 22, 24, 32, 40, 80] as const;
 
 export const config = {
 	fonts: {

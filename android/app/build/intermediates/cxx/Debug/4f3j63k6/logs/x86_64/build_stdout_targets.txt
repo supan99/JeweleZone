@@ -1,0 +1,5 @@
+ninja: Entering directory `/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/android/app/.cxx/Debug/4f3j63k6/x86_64'
+[0/2] Re-checking globbed directories...
+[1/3] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+[2/3] Building CXX object CMakeFiles/appmodules.dir/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/android/app/build/generated/rncli/src/main/jni/rncli.cpp.o
+[3/3] Linking CXX shared library /Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/android/app/build/intermediates/cxx/Debug/4f3j63k6/obj/x86_64/libappmodules.so

@@ -1,8 +1,9 @@
 import type { StackScreenProps } from '@react-navigation/stack';
 
 export type ApplicationStackParamList = {
+	Signup: undefined;
 	Startup: undefined;
-	Example: undefined;
+	Onboarding: undefined;
 };
 
 export type ApplicationScreenProps =

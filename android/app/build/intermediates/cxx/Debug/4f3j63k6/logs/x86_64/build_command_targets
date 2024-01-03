@@ -1,0 +1,8 @@
+/Users/supan/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/android/app/.cxx/Debug/4f3j63k6/x86_64 \
+  appmodules \
+  react_codegen_reactnativemmkv \
+  react_codegen_rngesturehandler_codegen \
+  react_codegen_rnscreens \
+  react_codegen_safeareacontext

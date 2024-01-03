@@ -30,6 +30,15 @@ export const staticFontStyles = {
 	bold: {
 		fontWeight: 'bold',
 	},
+	medium: {
+		fontWeight: "500",
+	},
+	semiBold: {
+		fontWeight: '600',
+	},
+	bold700: {
+		fontWeight: '700',
+	},
 	uppercase: {
 		textTransform: 'uppercase',
 	},
@@ -47,5 +56,32 @@ export const staticFontStyles = {
 	},
 	libreBaskervilleBold: {
 		fontFamily: "LibreBaskerville-Bold"
-	}
+	},
+	interBlack: {
+		fontFamily: "Inter-Black"
+	},
+	interBold: {
+		fontFamily: "Inter-Bold"
+	},
+	interExtraBold: {
+		fontFamily: "Inter-ExtraBold"
+	},
+	interExtraLight: {
+		fontFamily: "Inter-ExtraLight"
+	},
+	interLight: {
+		fontFamily: "Inter-Light"
+	},
+	interMedium: {
+		fontFamily: "Inter-Medium"
+	},
+	inter: {
+		fontFamily: "Inter-Regular"
+	},
+	interSemiBold: {
+		fontFamily: "Inter-SemiBold"
+	},
+	interThin: {
+		fontFamily: "Inter-Thin"
+	},
 } as const satisfies Record<string, TextStyle>;

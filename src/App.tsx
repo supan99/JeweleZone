@@ -6,16 +6,19 @@ import { ThemeProvider } from '@/theme';
 
 import ApplicationNavigator from './navigators/Application';
 import './translations';
+import { useState } from 'react';
 
 const queryClient = new QueryClient();
 
 export const storage = new MMKV();
 
 function App() {
+
+	const [initialRoute, setinitialRoute] = useState('');
 	return (
 		<QueryClientProvider client={queryClient}>
 			<ThemeProvider storage={storage}>
-				<ApplicationNavigator />
+				<ApplicationNavigator initialRoute={initialRoute} />
 			</ThemeProvider>
 		</QueryClientProvider>
 	);

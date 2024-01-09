@@ -1,20 +1,74 @@
-import React from 'react';
-import {
-  Alert,
-  Dimensions,
-  Linking,
-  Platform,
-  Text,
-  View,
-} from 'react-native';
-
+import React from "react";
+import { Alert, Dimensions, Linking, Platform, Text, View } from "react-native";
 
 //Static avatar
-export const AvatarURL = 'Avatar3x.png';
+export const AvatarURL = "Avatar3x.png";
 
 export const screenSize = {
-  height: Dimensions.get('window').height,
-  width: Dimensions.get('window').width,
+  height: Dimensions.get("window").height,
+  width: Dimensions.get("window").width,
+};
+
+export const fontFamily = {
+  bold: "Inter-Black",
+  interbold: "Inter-Bold",
+  extrabold: "Inter-ExtraBold",
+  extralight: "Inter-ExtraLight",
+  light: "Inter-Light",
+  midium: "Inter-Medium",
+  regular: "Inter-Regular",
+  semibold: "Inter-SemiBold",
+  inerthem: "Inter-Thin",
+  bolditalic: "LibreBaskerville-Bold",
+  italic: "LibreBaskerville-Italic",
+  regularitalic: "LibreBaskerville-Regular",
+};
+
+export const color = {
+  white: "#FFFFFF",
+  black: "#000000",
+  blackfont: "#050506",
+  brown: "#764800",
+  inputetitle: "#28292F",
+  inputebordercolor: "#ECEDEE",
+  inputetext: "#656672",
+  errorcolor: "#A50606",
+  bordercolor: "#D7D7DB",
+};
+export const fontSize = {
+  size8: getWidth(8),
+  size9: getWidth(9),
+  size10: getWidth(10),
+  size11: getWidth(11),
+  size12: getWidth(12),
+  size13: getWidth(13),
+  size14: getWidth(14),
+  size15: getWidth(15),
+  size16: getWidth(16),
+  size17: getWidth(17),
+  size18: getWidth(18),
+  size19: getWidth(19),
+  size20: getWidth(20),
+  size21: getWidth(21),
+  size22: getWidth(22),
+  size23: getWidth(23),
+  size24: getWidth(24),
+  size25: getWidth(25),
+  size26: getWidth(26),
+  size27: getWidth(27),
+  size28: getWidth(28),
+  size36: getWidth(36),
+  size42: getWidth(42),
+  size34: getWidth(34),
+  size50: getWidth(50),
+  size30: getWidth(30),
+  size38: getWidth(38),
+  size32: getWidth(32),
+};
+export const Opacity = 0.6;
+
+export const showError = (message: string) => {
+  return Alert.alert("", message, [{ text: "Ok" }]);
 };
 
 //Global function
@@ -27,14 +81,14 @@ export function getHeight(size: number) {
 }
 
 export const asyncStorageKey = {
-  isWalkthroughVisisted: 'isWalkthroughVisisted',
-  isNotificationAccess: 'isNotificationAccess',
-  isLocationAccess: 'isLocationAccess',
-  isUserLoggedIn: 'isUserLoggedIn',
-  userData: 'userData',
-  deviceOSVersion: 'DeviceOSVersion',
-  deviceDeviceName: 'DeviceDeviceName',
-  userDefaultAddress: 'UserDefaultAddress',
+  isWalkthroughVisisted: "isWalkthroughVisisted",
+  isNotificationAccess: "isNotificationAccess",
+  isLocationAccess: "isLocationAccess",
+  isUserLoggedIn: "isUserLoggedIn",
+  userData: "userData",
+  deviceOSVersion: "DeviceOSVersion",
+  deviceDeviceName: "DeviceDeviceName",
+  userDefaultAddress: "UserDefaultAddress",
 };
 
 // Touchable opacity alpha
@@ -42,12 +96,12 @@ export const opacity = 0.6;
 
 // Constants for keyboardType
 export const keyboard_type = {
-  email: 'email-address',
-  ascii_capable_numberpad: 'ascii-capable-number-pad',
-  ascii_capable: 'ascii-capable',
+  email: "email-address",
+  ascii_capable_numberpad: "ascii-capable-number-pad",
+  ascii_capable: "ascii-capable",
 };
 
-export const currency = '$';
+export const currency = "$";
 export const commonBottomMargin = getHeight(37);
 
 //Const Values
@@ -66,72 +120,69 @@ export const constantInt = {
   monthLength: 2,
 };
 
-const staticURLLink = 'http://oceanapp.net';
+const staticURLLink = "http://";
 export const staticURL = {
-  aboutUs: staticURLLink + '/aboutus',
-  termscondition: staticURLLink + '/termscondition',
-  privacypolicy: staticURLLink + '/privacypolicy',
-  view_faqs: staticURLLink + '/view_faqs',
-  cancellationPolicy: staticURLLink + '/cancellationpolicy',
+  aboutUs: staticURLLink + "/aboutus",
+  termscondition: staticURLLink + "/termscondition",
+  privacypolicy: staticURLLink + "/privacypolicy",
+  view_faqs: staticURLLink + "/view_faqs",
+  cancellationPolicy: staticURLLink + "/cancellationpolicy",
 };
 
 // Validation messages
 export const messages = {
-  enterName: 'Please enter name',
-  enterMin3CharacterName: 'Please enter minimum 3 character for ',
-  validName: 'Please enter valid name',
-  blankPhone: 'Please enter phone number',
-  enterMinPhone: 'Please enter minimum 10 digits for phone number',
-  validPhone: 'Please enter valid phone number',
-  blankEmail: 'Please enter email',
-  validEmail: 'Please enter valid email',
-  blankPassword: 'Please enter password',
-  enterMinPassword: 'Please enter minimum 8 characters for ',
+  enterName: "Please enter name",
+  enterMin3CharacterName: "Please enter minimum 3 character for ",
+  validName: "Please enter valid name",
+  blankPhone: "Please enter phone number",
+  enterMinPhone: "Please enter minimum 10 digits for phone number",
+  validPhone: "Please enter valid phone number",
+  blankEmail: "Please enter email",
+  validEmail: "Please enter valid email",
+  blankPassword: "Please enter password",
+  enterMinPassword: "Please enter minimum 8 characters for ",
   validPassword:
-    'Password must use upper case, lower case, special character and digit',
-  blankConfirmPassword: 'Please enter confirm password',
-  passwordMismatch: 'Password mismatch',
-  checkAgree: 'Please agree with terms and conditions',
-  checkPrivacy: 'Please agree with privacy and policy',
-  blankOTP: 'Please enter OTP',
-  validOTP: 'Please enter valid OTP',
-  blankAddress: 'Please enter address',
-  blankTitle: 'Please enter title',
-  blankStreetAddress: 'Please enter street address',
-  blankPostalCode: 'Please enter postal/zipcode',
-  enterMinPostalCode: 'Please enter minimum 6 digit for zipcode',
-  validPostalCode: 'Please enter valid postal code',
-  blankNewPassword: 'Please enter new password',
-  newPassword: 'new password',
-  blankCardHolderName: 'Please enter card holder name',
-  blankCardNumber: 'Please enter card number',
-  enterMinCardNumber: 'Please enter minimum 16 digit for ',
-  validCardNumber: 'Please enter valid card number',
-  blankMonth: 'Please enter month for expiry date',
-  validMonth: 'Please enter valid month for expiry date',
-  blankYear: 'Please enter year for expiry date',
-  enterMinYear: 'Please enter minimum  4 digit for year in expiry date',
-  validYear: 'Please enter valid year for expiry date',
-  blankCVV: 'Please enter Cvv',
-  enterMinCVV: 'Please enter minimum 3 digit for cvv',
-  blankNotes: 'Please enter notes',
+    "Password must use upper case, lower case, special character and digit",
+  blankConfirmPassword: "Please enter confirm password",
+  passwordMismatch: "Password mismatch",
+  checkAgree: "Please agree with terms and conditions",
+  checkPrivacy: "Please agree with privacy and policy",
+  blankOTP: "Please enter OTP",
+  validOTP: "Please enter valid OTP",
+  blankAddress: "Please enter address",
+  blankTitle: "Please enter title",
+  blankStreetAddress: "Please enter street address",
+  blankPostalCode: "Please enter postal/zipcode",
+  enterMinPostalCode: "Please enter minimum 6 digit for zipcode",
+  validPostalCode: "Please enter valid postal code",
+  blankNewPassword: "Please enter new password",
+  newPassword: "new password",
+  blankCardHolderName: "Please enter card holder name",
+  blankCardNumber: "Please enter card number",
+  enterMinCardNumber: "Please enter minimum 16 digit for ",
+  validCardNumber: "Please enter valid card number",
+  blankMonth: "Please enter month for expiry date",
+  validMonth: "Please enter valid month for expiry date",
+  blankYear: "Please enter year for expiry date",
+  enterMinYear: "Please enter minimum  4 digit for year in expiry date",
+  validYear: "Please enter valid year for expiry date",
+  blankCVV: "Please enter Cvv",
+  enterMinCVV: "Please enter minimum 3 digit for cvv",
+  blankNotes: "Please enter notes",
 
-  deleteAddressPopUp: 'Are you sure you want to delete this address?',
-  deleteAddressSuccess: 'Your address has been deleted successfully',
-  deleteAccount: 'Are you sure you want to delete this account?',
-  pleaseSelectTimeSlot: 'pleaseSelectTimeSlot',
+  deleteAddressPopUp: "Are you sure you want to delete this address?",
+  deleteAddressSuccess: "Your address has been deleted successfully",
+  deleteAccount: "Are you sure you want to delete this account?",
 
-  logoutUser: 'Are you sure you want to logout from app?',
-  deletePaymentMethod: 'Are you sure you want to delete this payment methods?',
-  deleteNotifications: 'Are you sure you want to delete this notification?',
+  logoutUser: "Are you sure you want to logout from app?",
 
   cameraPermission:
-    'This allows you to choose photos from library within the app (e.g for your profile photo)',
+    "This allows you to choose photos from library within the app (e.g for your profile photo)",
   galleryPermission:
-    'This allows you to choose photos from library within the app (e.g for your profile photo)',
-  locationPermission: 'This allows you to access your location within the app',
+    "This allows you to choose photos from library within the app (e.g for your profile photo)",
+  locationPermission: "This allows you to access your location within the app",
   calenderPermission:
-    'This allows you to access your calender. (e.g for Add event into Calender)',
+    "This allows you to access your calender. (e.g for Add event into Calender)",
 };
 
 // Error Function
@@ -139,7 +190,6 @@ export const messages = {
 // export function showError(message: string) {
 //   Alert.alert(appName, message, [{text: 'Ok'}]);
 // }
-
 
 //Dailog Function
 // export function showConfirmDialog(message: string, onPressYes: any, yes: string, no: string) {
@@ -205,7 +255,6 @@ export const messages = {
 //   ios: PERMISSIONS.IOS.LOCATION_ALWAYS,
 //   android: PERMISSIONS.ANDROID.ACCESS_FINE_LOCATION,
 // });
-
 
 // Permission popup
 // export function checkPermission(permission: any, message: string) {
@@ -359,43 +408,42 @@ export const messages = {
 
 export const notification_type = {
   status_update: {
-    name: 'status_update',
+    name: "status_update",
   },
   other_alert: {
-    name: 'other_alert',
+    name: "other_alert",
   },
 };
 
 //Login Types
 export const Login_Type = {
-  apple: 'A',
-  faceBook: 'F',
-  google: 'G',
-  simple: 'S',
+  apple: "A",
+  faceBook: "F",
+  google: "G",
+  simple: "S",
 };
 
 export const User_Type = {
-  user: 'U',
-  provider: 'P',
+  user: "U",
+  provider: "P",
 };
 
 //Caller Open
 export const openCaller = (phone: string) => {
-  console.log('callNumber ----> ', phone);
+  console.log("callNumber ----> ", phone);
   let phoneNumber = phone;
-  if (Platform.OS !== 'android') {
+  if (Platform.OS !== "android") {
     phoneNumber = `telprompt:${phone}`;
   } else {
     phoneNumber = `tel:${phone}`;
   }
   Linking.canOpenURL(phoneNumber)
-    .then(supported => {
+    .then((supported) => {
       if (!supported) {
-        Alert.alert('Phone number is not available');
+        Alert.alert("Phone number is not available");
       } else {
         return Linking.openURL(phoneNumber);
       }
     })
-    .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 };
-

@@ -3,12 +3,14 @@
 cmake_minimum_required(VERSION 3.13)
 set(CMAKE_VERBOSE_MAKEFILE on)
 
-add_subdirectory(/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/ rngesturehandler_codegen_autolinked_build)
-add_subdirectory(/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/ reactnativemmkv_autolinked_build)
-add_subdirectory(/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-safe-area-context/android/src/main/jni/ safeareacontext_autolinked_build)
-add_subdirectory(/Users/supan/Desktop/Supan/React_Native/MyApp/MyApp/node_modules/react-native-screens/android/src/main/jni/ rnscreens_autolinked_build)
+add_subdirectory(/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-curved-bottom-bar/android/build/generated/source/codegen/jni/ CurvedBottomBarView_autolinked_build)
+add_subdirectory(/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-gesture-handler/android/build/generated/source/codegen/jni/ rngesturehandler_codegen_autolinked_build)
+add_subdirectory(/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/ reactnativemmkv_autolinked_build)
+add_subdirectory(/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-safe-area-context/android/src/main/jni/ safeareacontext_autolinked_build)
+add_subdirectory(/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-screens/android/src/main/jni/ rnscreens_autolinked_build)
 
 set(AUTOLINKED_LIBRARIES 
+  react_codegen_CurvedBottomBarView
   react_codegen_rngesturehandler_codegen
   react_codegen_reactnativemmkv
   react_codegen_safeareacontext

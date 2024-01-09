@@ -12,7 +12,8 @@
     "test": "jest",
     "type-check": "tsc",
     "test:report": "jest --collectCoverage --coverageDirectory=\"./coverage\" --ci --reporters=default --reporters=jest-junit --coverage",
-    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install && cd .."
+    "pod-install": "cd ios && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install && cd ..",
+    "build": "cd android && ./gradlew clean && cd .. && npx react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/src/main/assets/index.android.bundle --assets-dest ./android/app/src/main/res && cd android && ./gradlew assembleDebug && cd .. && open ./android/app/build/outputs/apk/debug"
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "^0.3.0",
@@ -25,6 +26,7 @@
     "react": "18.2.0",
     "react-i18next": "^13.5.0",
     "react-native": "^0.72.7",
+    "react-native-curved-bottom-bar": "^3.2.6",
     "react-native-floating-label-input": "^1.4.3",
     "react-native-fs": "^2.20.0",
     "react-native-gesture-handler": "^2.14.0",

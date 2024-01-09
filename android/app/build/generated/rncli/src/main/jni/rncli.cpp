@@ -7,6 +7,7 @@
  */
 
 #include "rncli.h"
+#include <CurvedBottomBarView.h>
 #include <rngesturehandler_codegen.h>
 #include <react/renderer/components/rngesturehandler_codegen/ComponentDescriptors.h>
 #include <reactnativemmkv.h>
@@ -21,6 +22,10 @@ namespace react {
 
 
 std::shared_ptr<TurboModule> rncli_ModuleProvider(const std::string moduleName, const JavaTurboModule::InitParams &params) {
+  auto module_CurvedBottomBarView = CurvedBottomBarView_ModuleProvider(moduleName, params);
+  if (module_CurvedBottomBarView != nullptr) {
+    return module_CurvedBottomBarView;
+  }
   auto module_rngesturehandler_codegen = rngesturehandler_codegen_ModuleProvider(moduleName, params);
   if (module_rngesturehandler_codegen != nullptr) {
     return module_rngesturehandler_codegen;
@@ -43,6 +48,7 @@ std::shared_ptr<TurboModule> rncli_ModuleProvider(const std::string moduleName, 
 void rncli_registerProviders(std::shared_ptr<ComponentDescriptorProviderRegistry const> providerRegistry) {
 
 
+
   providerRegistry->add(concreteComponentDescriptorProvider<RNGestureHandlerButtonComponentDescriptor>());
   providerRegistry->add(concreteComponentDescriptorProvider<RNGestureHandlerRootViewComponentDescriptor>());
 
@@ -57,6 +63,7 @@ void rncli_registerProviders(std::shared_ptr<ComponentDescriptorProviderRegistry
   providerRegistry->add(concreteComponentDescriptorProvider<RNSScreenStackComponentDescriptor>());
   providerRegistry->add(concreteComponentDescriptorProvider<RNSSearchBarComponentDescriptor>());
   providerRegistry->add(concreteComponentDescriptorProvider<RNSScreenComponentDescriptor>());
+
 
 
   return;

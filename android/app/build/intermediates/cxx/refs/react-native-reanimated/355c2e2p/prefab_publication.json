@@ -1,0 +1,26 @@
+{
+  "installationFolder": "/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-reanimated/android/build/intermediates/prefab_package/debug/prefab",
+  "gradlePath": ":react-native-reanimated",
+  "packageInfo": {
+    "packageName": "react-native-reanimated",
+    "packageSchemaVersion": 2,
+    "packageDependencies": [],
+    "modules": [
+      {
+        "moduleName": "reanimated",
+        "moduleHeaders": "/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-reanimated/android/build/prefab-headers/reanimated",
+        "moduleExportLibraries": [],
+        "abis": [
+          {
+            "abiName": "arm64-v8a",
+            "abiApi": 21,
+            "abiNdkMajor": 23,
+            "abiStl": "c++_shared",
+            "abiLibrary": "/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-reanimated/android/build/intermediates/cxx/Debug/5494f2h2/obj/arm64-v8a/libreanimated.so",
+            "abiAndroidGradleBuildJsonFile": "/Users/mac1/Downloads/JeweleZone-development/node_modules/react-native-reanimated/android/.cxx/Debug/5494f2h2/arm64-v8a/android_gradle_build.json"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { FloatingLabelInput } from 'react-native-floating-label-input';
-import EyeOn from "@/theme/assets/images/eyeOn.svg"
-import EyeOff from "@/theme/assets/images/eyeOff.svg"
 
-export default function TextInput({props}) {
+export default function TextInput({props}:any) {
   const [cont, setCont] = useState('');
   const [show, setShow] = useState(false);
   const [isSecureText, setIsSecureText] = useState(false);
@@ -18,7 +15,7 @@ export default function TextInput({props}) {
 
   return (
     <View style={{ flex: 1 }}>
-      <FloatingLabelInput
+      {/* <FloatingLabelInput
         label={''}
         placeholder={props?.placeholder || ""}
         isPassword
@@ -27,7 +24,7 @@ export default function TextInput({props}) {
         onChangeText={value => setCont(value)}
         customShowPasswordComponent={isSecureText ? <EyeOn /> : <></>}
         customHidePasswordComponent={isSecureText ? <EyeOff /> : <></>}
-      />
+      /> */}
     </View>
   );
 }

@@ -1,0 +1,2 @@
+-- Configuring incomplete, errors occurred!
+See also "/Users/mac1/Downloads/JeweleZone-development/android/app/.cxx/Debug/172b2a43/x86/CMakeFiles/CMakeOutput.log".

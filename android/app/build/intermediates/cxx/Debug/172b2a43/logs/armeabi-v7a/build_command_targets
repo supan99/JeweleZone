@@ -1,0 +1,9 @@
+/Users/mac1/Library/Android/sdk/cmake/3.22.1/bin/ninja \
+  -C \
+  /Users/mac1/Downloads/JeweleZone-development/android/app/.cxx/Debug/172b2a43/armeabi-v7a \
+  appmodules \
+  react_codegen_CurvedBottomBarView \
+  react_codegen_reactnativemmkv \
+  react_codegen_rngesturehandler_codegen \
+  react_codegen_rnscreens \
+  react_codegen_safeareacontext
